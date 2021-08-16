@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas de Localización</title>
+    <link rel="stylesheet" href="./css/mLocalización.css">
+</head>
+<body>
+    <button type="button" id="btn-average">media</button>
+    <button type="button" id="btn-mediana">mediana</button>
+    <button type="button" id="btn-moda">moda</button>
+
+    <div id="container-average" class="container-average">
+        <h1>Calcular media aritmetica o promedio.</h1>
+        <label>
+            Inserta los datos:
+            <input id="input-data-media" type="number">
+            <button type="button" id="btn-average-save">Guardar</button>
+            <button type="button" id="btn-average-clean">Limpiar</button>
+            <button type="button" id="btn-average-calc">Calcular</button>
+            <button type="button" id="btn-average-delete">Eliminar dato</button>
+        </label>
+        <span id="result-average"></span>
+    </div>
+    <div id="container-mediana" class="container-mediana">
+        <h1>Calcular mediana</h1>
+        <label>
+            Inserta los datos:
+            <input id="input-data-mediana" type="number">
+            <button type="button" id="btn-mediana-save">Guardar</button>
+            <button type="button" id="btn-mediana-clean">Limpiar</button>
+            <button type="button" id="btn-mediana-calc">Calcular</button>
+            <button type="button" id="btn-mediana-delete">Eliminar dato</button>
+        </label>
+        <span id="result-mediana"></span>
+    </div>
+    <div id="container-moda" class="container-moda">
+        <h1>Calcular Moda</h1>
+        <label>
+            Inserta los datos:
+            <input id="input-data-moda" type="number">
+            <button type="button" id="btn-moda-save">Guardar</button>
+            <button type="button" id="btn-moda-clean">Limpiar</button>
+            <button type="button" id="btn-moda-calc">Calcular</button>
+            <button type="button" id="btn-moda-delete">Eliminar Dato</button>
+        </label>
+        <span id="result-moda"></span>
+    </div>
+
+    <div class="container-delete-data" id="container-delete-data">
+        <label>
+            Que dato quieres eliminar?
+            <input id="input-delete" type="number">
+            <button type="button" id="btn-delete">Eliminar</button>
+        </label>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/media.js"></script>
+    <script src="../js/mediana.js"></script>
+    <script src="../js/moda.js"></script>
+</body>
+</html>
