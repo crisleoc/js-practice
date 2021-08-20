@@ -16,7 +16,6 @@ function calcAverage(array){
         resultAverage.innerHTML = `La media de tus datos es: ${(plus / array.length).toFixed(2)}`
         listDataAverage = []
         inputDataAverage.setAttribute("placeholder","")
-        inputDeleteData.setAttribute("placeholder","")
     } else if(array.length == 1) {
         inputDataAverage.setAttribute("placeholder","Ingresa más datos.")
     } else{
@@ -31,7 +30,7 @@ btnSaveAverage.addEventListener("click", () => {
 })
 
 inputDataAverage.addEventListener("keypress", (event) => {
-    if(event.keyCode === 13 && inputDataAverage.value != "") {
+    if(event.code === 'Enter' && inputDataAverage.value != "") {
         saveData(inputDataAverage, listDataAverage)
     }
 })

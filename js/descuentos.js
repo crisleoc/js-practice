@@ -28,13 +28,9 @@ function calcDiscount() {
 }
 
 document.addEventListener("keypress", (event) => {
-    if (event.keyCode == 13) {
+    if (event.code == 'Enter') {
         calcDiscount()
     }
 })
 
-function boton() {
-    if (btn.onclick){
-        calcDiscount()
-    }
-}
+btn.addEventListener("click", () =>  calcDiscount())
