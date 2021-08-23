@@ -42,7 +42,7 @@ function deleteData(input, list){
 //EN EL MOMENTO DE DAR CLICK EN EL BOTON O PRESIONAR ENTER
 function selectDeleteData(inputData, listData){
     inputDeleteData.addEventListener("keypress", (event) => {
-        if(event.code === 'Enter' && inputDeleteData.value != "") {
+        if(event.keyCode === 13 && inputDeleteData.value != "") {
             deleteData(inputData, listData)
         } else if (inputDeleteData.value === "") {
             inputDeleteData.setAttribute("placeholder", "Ingresa un dato")

@@ -75,3 +75,7 @@ btnDeleteMediana.addEventListener('click', (event) => showHideDelete(event.srcEl
 //     e = e || event
 //     console.log(e)
 // }
+
+// inputDataMediana.addEventListener ('keypress', function(e){
+//     if (e.keyCode == 13  && inputDataMediana.value != "") alert ('Has pulsado enter safa');
+// })

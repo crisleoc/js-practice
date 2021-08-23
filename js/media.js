@@ -30,7 +30,7 @@ btnSaveAverage.addEventListener("click", () => {
 })
 
 inputDataAverage.addEventListener("keypress", (event) => {
-    if(event.code === 'Enter' && inputDataAverage.value != "") {
+    if(event.keyCode === 13 && inputDataAverage.value != "") {
         saveData(inputDataAverage, listDataAverage)
     }
 })

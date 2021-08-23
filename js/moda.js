@@ -36,7 +36,7 @@ function calcModa(array) {
 }
 
 inputDataModa.addEventListener('keypress', (event) => {
-    if(event.code === 'Enter' && inputDataModa.value != "") {
+    if(event.keyCode === 13 && inputDataModa.value != "") {
         saveData(inputDataModa, listDataModa)
     }
 })
