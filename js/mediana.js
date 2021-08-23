@@ -34,7 +34,7 @@ function calcMediana(array) {
 }
 
 inputDataMediana.addEventListener('keypress', (event) => {
-    if(event.code === 'Enter' && inputDataMediana.value != "") {
+    if(event.code === 'Enter' || event.keyCode === 13 && inputDataMediana.value != "") {
         saveData(inputDataMediana, listDataMediana)
     }
 })
